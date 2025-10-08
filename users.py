@@ -9,7 +9,7 @@ def get_all_users(limit=None, offset=None):
         query += " LIMIT %s OFFSET %s"
         params = [limit, offset]
     cursor.execute(query, params)
-    users = cursor.fetchall()
+    users = cursor.fetchall() 
     cursor.close()
     conn.close() 
     return users
