@@ -11,7 +11,7 @@ def get_all_users(limit=None, offset=None):
     cursor.execute(query, params)
     users = cursor.fetchall()
     cursor.close()
-    conn.close()
+    conn.close() 
     return users
 
 def create_user(name, email):
